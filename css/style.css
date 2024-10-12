@@ -378,7 +378,7 @@
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/carousel-1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/about-img-2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1077,4 +1077,132 @@ h2.text-center, p.text-center {
     .timeline-item {
         width: 18%; /* Ensure 4 items fit in a row */
     }
+}
+
+ /* Custom Styles for Product Cards */
+ .product-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+  }
+
+  .product-card img {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Buttons container initially hidden */
+  .product-btn-container {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: bottom 0.3s ease;
+  }
+
+  /* Show buttons on hover */
+  .product-card:hover .product-btn-container {
+    bottom: 0;
+  }
+
+  .product-btn {
+    border-radius: 0;
+    width: 50%;
+  }
+
+  .rounded-bottom {
+    background-color: #fff;
+    padding-bottom: 60px; /* Adjusted padding to accommodate buttons */
+  }
+  .order-container {
+    display: flex;
+    
+    width: 98vw;
+}
+.order-sidebar {
+    background-color: #343a40;
+    color: white;
+    width: 200px;
+    padding: 20px;
+}
+.order-sidebar h1 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    
+    text-align: center;
+}
+.order-sidebar .order-step {
+    
+    font-size: 18px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.order-sidebar .order-step i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.order-content {
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 20px;
+}
+.order-step {
+    display: none; /* Hide all steps by default */
+    flex: 1;
+    text-align: center;
+    border: 1px white dashed;
+    padding: 10px 5px;
+}
+.order-step.active {
+    display: block;    /* Show the active step */
+}
+.order-step-box {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+.order-upload-box {
+    border: 2px dashed #ccc;
+    padding: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+.order-upload-box:hover {
+    background-color: #f9f9f9;
+}
+.order-nav-link.active {
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+}
+.order-nav-link {
+    cursor: pointer;
+}
+.order-top-right-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.order-top-right-buttons button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.order-top-right-buttons button:hover {
+    background-color: #c82333;
 }
